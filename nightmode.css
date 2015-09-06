@@ -1,1 +1,3 @@
-@media only screen and (min-width:100px) and (max-width:720px){content-inner{background-color:#000;}.post{background-color:#000}.main-inner .columns{background-color:#000;}.post-footer{background-color:#fff;}body{background:#fff}.body-fauxcolumn-outer .cap-top{background:#000;}body{background:#000}.date-header span{color:#fff;}.content-inner{border:3px solid #000;}}
+<!--.content-inner{background-color:#000;}.post{background-color:#000}.main-inner .columns{background-color:#000;}.post-footer{background-color:#fff;}body{background:#fff}.body-fauxcolumn-outer .cap-top{background:#000;}body{background:#000}.date-header span{color:#fff;}.content-inner{border:3px solid #000;}-->
+img,body{-webkit-filter: invert(100%);
+    filter: invert(100%);}.body-fauxcolumn-outer .cap-top{background:#000;}.main-inner .columns {background-color:#000;} #HTML4,#PopularPosts2{display:none;}
