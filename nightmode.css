@@ -3,5 +3,5 @@ body{background-color:#FF0000;}.body-fauxcolumn-outer .cap-top,.main-inner .colu
  body{background:#FF0000}.body-fauxcolumn-outer .cap-top{background:#FF00FF;}.content-outer{background:#169616;}
 .content{background:#8EB90F;}.loading mobile{background:#969696;}
 
-@media all and (min-width: 240px) and (max-width:640px){body{background-color:#FF0000;}.body-fauxcolumn-outer .cap-top{background:#FF00FF;}.content-inner{background-color:yellow;}
-body{background-color:#FF0000;}}
+@media all and (min-width: 240px) and (max-width:640px){body{background:#FF0000;}.body-fauxcolumn-outer .cap-top{background:#FF00FF;}.content-inner{background-color:yellow;}
+}
