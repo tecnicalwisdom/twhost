@@ -1,7 +1,7 @@
 
 body{background-color:#FF0000;}.body-fauxcolumn-outer .cap-top,.main-inner .columns {background-color:blue;} #HTML4,#PopularPosts2{display:none;}.content-inner{background-color:yellow;}.post{background-color:#000;}.post-footer{/*label container*/background-color:brown;}.main-inner .columns {background-color:yellow;}.post-outer{background-color:#00FF00;}
  body{background:#FF0000}.body-fauxcolumn-outer .cap-top{background:#FF00FF;}.content-outer{background:#169616;}
-.content{background:#8EB90F;}
+.content{background:#8EB90F;}.loading mobile{background:#969696;}
 
 @media all and (min-width: 241px) and (max-width:320px){
 .body-fauxcolumn-outer .cap-top{background:#fff;}}
