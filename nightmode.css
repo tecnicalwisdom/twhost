@@ -7,3 +7,4 @@ body{background-color:#000;}.body-fauxcolumn-outer .cap-top,.main-inner .columns
 }
 @media handheld, only screen and  (max-width:767px){body {background:#000;min-width: 92%;}}
 #couchToolbar_Close{background-position:0px 0px;display:block;}#couchmode{display:none;}
+#mreadmode{-webkit-filter: invert(100%);filter: invert(100%);}
