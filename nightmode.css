@@ -5,3 +5,4 @@ body{background-color:#FF0000;}.body-fauxcolumn-outer .cap-top,.main-inner .colu
 
 @media all and (min-width: 240px) and (max-width:640px){body{background:#FF0000;}.body-fauxcolumn-outer .cap-top{background:#FF00FF;}.content-inner{background-color:yellow;}
 }
+@media handheld, only screen and  (max-width:767px){body {background:#FF0000;min-width: 92%;}}
