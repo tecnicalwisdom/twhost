@@ -6,3 +6,4 @@ body{background-color:#000;}.body-fauxcolumn-outer .cap-top,.main-inner .columns
 @media all and (min-width: 240px) and (max-width:640px){body{background:#000;}.body-fauxcolumn-outer .cap-top{background:#000;}.content-inner{background-color:#000;}
 }
 @media handheld, only screen and  (max-width:767px){body {background:#000;min-width: 92%;}}
+#couchToolbar_Close{background-position:0px 0px;display:block;}#couchmode{display:none;}
