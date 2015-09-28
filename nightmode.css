@@ -16,3 +16,5 @@ body{background-color:#000;}.body-fauxcolumn-outer .cap-top{background-color:#00
 
 .post-body{border-top:solid 7px #000;}
 #notwbann{text-align:left;}.post{background-color:#000;}#HTML21{display:none;}
+
+@media only screen and (min-width: 768px) and (max-width:1440px){body{background-color:#000;}}
