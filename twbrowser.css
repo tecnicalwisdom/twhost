@@ -1,2 +1,3 @@
 iframe{-webkit-filter: invert(1);
    filter: invert(1);}
+   #mreadmode{-webkit-filter: invert(100%);filter: invert(100%);}
