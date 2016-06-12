@@ -3,7 +3,7 @@ body{background-color:#000;}.body-fauxcolumn-outer .cap-top{background-color:#00
  body{background:#000;}.body-fauxcolumn-outer .cap-top{background:#000;}.content-outer{background:#000;}
 .content{background:rgba(0,0,0,0);}body.loading mobile{background:#000;}.shareaholic-total-share-count,.shareaholic-shares-label{color:#fff;}.date-header span{color:#fff;} span.guestauthor{color:#fff;}
 #couchToolbar_Close{background-position:0px 0px;display:block;}#couchmode{display:none;}
-#mreadmode{-webkit-filter: invert(100%);filter: invert(100%);}
+#mreadmode{-webkit-filter: invert(100%);filter: invert(100%);}.content{background:#000;}
 .columns-inner,
 .column-center-outer,
 .column-center-inner,
