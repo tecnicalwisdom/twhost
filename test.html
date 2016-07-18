@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+  
+  
+  
+<input type="text" id="url" name="url" value="http://" /> try with <b>cnn.com</b>
+  
+<iframe height="90%" width="100%" src="" id="frame"></iframe>
+
+<script>$('input#url').on('paste keyup',function(){
+  
+  var url1 = this.value;
+  $('#frame').attr('src', url1);
+  
+});</script>
