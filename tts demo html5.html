@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/Abhishek%20Sen/Desktop/tts%20testing.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  <style type="text/css">
+    
+  </style>
+
+  <title>Text to Speech Demo by aybalasubramanian</title>
+
+  
+    
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+$(window).load(function(){
+var message = new SpeechSynthesisUtterance($("#text").val());
+var voices = speechSynthesis.getVoices();
+
+$("input").on("change", function () {
+    console.log($(this).attr("id"), $(this).val());
+    message[$(this).attr("id")] = $(this).val();
+});
+
+$("select").on("change", function () {
+    message.voice = voices[$(this).val()];
+});
+
+$("button").on("click", function () {
+    speechSynthesis.speak(message);
+});
+
+// Hack around voices bug
+var interval = setInterval(function () {
+    voices = speechSynthesis.getVoices();
+    if (voices.length) clearInterval(interval); else return;
+
+    for (var i = 0; i < voices.length; i++) {
+        $("select").append("<option value=\"" + i + "\">" + voices[i].name + "</option>");
+    }
+}, 10);
+});//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  <p>
+    <label>Message
+        <input type="text" id="text" value="Your package has been recorded.">
+    </label>
+</p>
+<p>
+    <label>Volume
+        <input type="number" id="volume" value="1">
+    </label>
+</p>
+<p>
+    <label>Rate
+        <input type="number" id="rate" value="1">
+    </label>
+</p>
+<p>
+    <label>Pitch
+        <input type="number" id="pitch" value="1">
+    </label>
+</p>
+<p>
+    <label>Voice
+        <select id="voice"></select>
+    </label>
+</p>
+<p>
+    <button type="button">Speak!</button>
+</p>
+  
+
+
+
+
+</body></html>
