@@ -1,4 +1,4 @@
-#header,.sidebar,footer,#facebooklike,.fschgerpadding,#dateholder,#comments,#nextprev,.ftrstylbkd{display:none;}.fauxcolumn-inner{position:relative;top:60px;}.post{width:1080px;}
+#subscription-box,#header,.sidebar,footer,#facebooklike,.fschgerpadding,#dateholder,#comments,#nextprev,.ftrstylbkd{display:none;}.fauxcolumn-inner{position:relative;top:60px;}.post{width:1080px;}
 
 
 #couchToolbar,#couchToolbar_Close{z-index:999;position:float;font-size:.9em;}#couchToolbar a{text-decoration:none;text-align:center;color:#fff;margin:0 .2em;font-size:18px;padding:7px;}#couchToolbar:hover{opacity:1.0;}#couchToolbar{opacity:0.4;background:#7092BE;font-size:.9em;display:block;position:fixed;top:0;left:90px;margin:0 4em 0 0;padding:.4em;}#couchToolbar_Close{background-position:0px 0px;display:block;font-size:242px;}#couchmode{display:none;}
