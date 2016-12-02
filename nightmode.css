@@ -2,7 +2,7 @@
 body{background-color:#000;}.body-fauxcolumn-outer .cap-top{background-color:#000;}.main-inner .columns {background-color:#000;}#PopularPosts2,HTML21{display:none;}.content-inner{background-color:rgba(0,0,0,0);}.post{background-color:rgba(0,0,0,0);color:#E1E1E1;}.content,.post-footer{/*label container*/background-color:#000;}.post-outer{background-color: rgba(0,0,0,0);}
  body{background:#000;}.body-fauxcolumn-outer .cap-top{background:#000;}.content-outer{background:#000;}
 body.loading mobile{background:#000;}.shareaholic-total-share-count,.shareaholic-shares-label{color:#fff;}.date-header span{color:#fff;} span.guestauthor{color:#fff;}
-#couchToolbar_Close{background-position:0px 0px;display:block;}#couchmode{display:none;}
+#couchToolbar_Close{background-position:0px 0px;display:block;}#couchmode{display:none;}.content-fauxcolumns{background:#000;}
 #mreadmode{-webkit-filter: invert(100%);filter: invert(100%);}.content{background:#000;}
 .columns-inner,
 .column-center-outer,
