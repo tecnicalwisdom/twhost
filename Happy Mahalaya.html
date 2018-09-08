@@ -734,8 +734,39 @@ var x = setInterval(function() {
 } 1000);
 </script>        
 </div>
-</div>
+</div> 
 
+
+  <script type="text/javascript">
+
+
+    window.onload=function(){
+      
+document.getElementById("playAudio2").addEventListener("click", function(){
+	var audio = document.getElementById('testAudio2');
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "Play"
+    audio.pause();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "Pause";
+    audio.play();
+  }
+
+});
+
+    }
+
+</script>
+
+</head>
+<body>
+  <audio id="testAudio2" hidden="" src="https://api.twilio.com/cowbell.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playAudio2" class="">Play</button>
+  
 <p style="font-size:32px;color:#fff;">শুভ মহালয়া ১৪২৫</p><p aling="center" style="font-size: 15px;color:#fff;"><b>
 ঢাকের আওয়াজ- ঢ্যাং কুর কুর<br> 
 শোনা যায় ওই আগমনী সুর<br>
