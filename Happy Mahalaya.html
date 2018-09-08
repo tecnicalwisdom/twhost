@@ -437,7 +437,11 @@ border-radius: 15px;
   from {    -webkit-filter: hue-rotate(0deg);  }
   to {    -webkit-filter: hue-rotate(-360deg);  }}
     .m1{position:fixed;left:1%; width:auto;height:100%;top:1%;color:#000}
-    .m2{position:fixed;right:1%; width:auto;height:100%;top:1%;color:#000;}
+    .m2{-moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);position:fixed;right:1%; width:auto;height:100%;top:1%;color:#000;}
 .bubbles {
 font-family: arial;
 }
