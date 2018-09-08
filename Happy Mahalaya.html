@@ -2,7 +2,43 @@
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <style>
-#aud_img{position:relative;left:0px;}#playAudio{position:absolute;top:120px;left:120px;width:90px;overflow-x:hidden;}
+#aud_img{position:relative;left:0px;}#playAudio{
+    
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: steps(1, start);
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: steps(1, start);
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, start);
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { background-color: #6B966B; }
+    50% { background-color: #40C040 }
+    100% { background-color: #15EA15; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { background-color: #6B966B; }
+    50% { background-color: #40C040 }
+    100% { background-color: #15EA15; }
+}
+
+@keyframes blinker {  
+    0% { background-color: #6B966B; }
+    50% { background-color: #40C040 }
+    100% { background-color: #15EA15; }
+
+	
+	position:absolute;top:120px;left:120px;width:90px;overflow-x:hidden;}
 @font-face {
     font-family: 'Kruti-Dev-010';
     src:  url('fonts/Kruti-Dev-010.ttf.html') format('woff'),
@@ -643,9 +679,7 @@ h3 {
 
 
 
-<!--<h2>Happy Independence Day 2018  </h2>
-<h2> <img src="https://3.bp.blogspot.com/-smGXwylpNb8/Wvvk7E6TfsI/AAAAAAAABHU/GPmsp3Y6ntM6paRAH-XB7swFywfQRjx6QCLcBGAs/s1600/bb.gif" class="img-responsive" alt="Independence Day  " >
-</h2>-->
+
 
 <h2> <img src="http://cdn.newsnation.in/images/2017/09/19/793372221-Mahalaya_6.jpg" class="img-responsive" alt="Independence Day " width="80%">
 </h2> 
@@ -713,7 +747,7 @@ var x = setInterval(function() {
 জানাই আগাম অভিনন্দন<br>
 ....শুভ মহালয়া....
  <br><p></p></b></p> <div id="aud_img">
-<audio id="testAudio" hidden src="https://api.twilio.com/cowbell.mp3" type="audio/mpeg">
+<audio id="testAudio" hidden src="https://bengalimp3downloads.com/Devi_Durga_Mantra/Mahalaya_Montro_Birendra_Krishna_Bhadra/Mahisasur%20mardini-Mahalaya%20-Birendra%20Krishna%20Bhadra.mp3" type="audio/mpeg">
 </audio>
 
 <button id="playAudio">Play</button>
