@@ -1,46 +1,5 @@
-﻿<html>
+<html>
 <head>
-<script src='http://code.jquery.com/jquery-1.6.4.js' type='text/javascript'></script>
-<script type="text/javascript">
-
-$(document).ready(function() {
-    
-    function beeLeft() {
-        $("#b").animate({left: "-=300"}, 8500, "swing", beeRight);
-    }
-    function beeRight() {
-        $("#b").animate({left: "+=300"}, 8500, "swing", beeLeft);
-    }
-    
-    beeRight();
-});
-</script>
-<script type="text/javascript">
-$(document).ready(function() {
-    
-    function beeLeft() {
-        $("#b2").animate({left: "-=300"}, 12500, "swing", beeRight);
-    }
-    function beeRight() {
-        $("#b2").animate({left: "+=300"}, 12500, "swing", beeLeft);
-    }
-    
-    beeRight();
-});
-</script>
-<script type="text/javascript">
-$(document).ready(function() {
-    
-    function beeLeft() {
-        $(".m1").animate({left: "-=300"}, 12500, "swing", beeRight);
-    }
-    function beeRight() {
-        $(".m1").animate({left: "+=300"}, 12500, "swing", beeLeft);
-    }
-    
-    beeRight();
-});
-</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <style>
 #aud_img{position:relative;left:0px;}#playAudio{position:absolute;top:120px;left:120px;width:90px;overflow-x:hidden;
@@ -413,12 +372,15 @@ input[type=name], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-.footerbtn {display: block;
-line-height: 15px;
-position: fixed;
-left:0px;
-bottom:0px;
-height:40px;            
+.footerbtn {
+ 
+            display: block;
+            line-height: 15px;
+            position: fixed;
+            left:0px;
+            bottom:0px;
+            height:40px;
+            
 border-radius: 15px;
   box-sizing: border-box;
   padding: 5px;
@@ -575,13 +537,15 @@ h3 {
 	
 }
 </style>
- 
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.js"></script>
 </head>
 
 <body id="vkp_sky" style="">
 <div style="position:fixed;right:5px;top:5px;color:#fff;font-size:12px;">
 Created by: <a>Abhishek Sen</a><br /></div>
 <div id="b2" style="position:absolute;top:75px;"><img border="0" src="https://4.bp.blogspot.com/-gCPLihRTW0w/W5oPwUJysrI/AAAAAAAAD6Y/7kR_flNHOiA6zOAab2nUB6AjC8ReZjyTgCLcBGAs/s55/cloud-1.png"/></div>
+
+
 <div id="b" style="position:absolute;top:150px;"><img border="0" src="https://4.bp.blogspot.com/-gCPLihRTW0w/W5oPwUJysrI/AAAAAAAAD6Y/7kR_flNHOiA6zOAab2nUB6AjC8ReZjyTgCLcBGAs/s120/cloud-1.png"/></div>
 <marquee class="m1" behavior="scroll" direction="up" scrolldelay="5">  <br>
 <img class="kite" src="https://3.bp.blogspot.com/-hmHzf4ZWW2M/W5oWVZvA2jI/AAAAAAAAD6k/H09WG9UyGvo3ba3udz1b-PlPNP3OW5EGwCLcBGAs/s100/kite.png">
@@ -604,9 +568,11 @@ Created by: <a>Abhishek Sen</a><br /></div>
 
 <style>
 
-.kite{     
-    -webkit-animation-name: shake;
-    -webkit-animation-duration: 5s;
+#b{
+    
+    
+    -webkit-animation-name: ftr;
+    -webkit-animation-duration: 37s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spinnerRotate;
@@ -619,17 +585,84 @@ Created by: <a>Abhishek Sen</a><br /></div>
     -ms-animation-timing-function: linear;
 }
 
+#b2{
+    
+    
+    -webkit-animation-name: ftr;
+    -webkit-animation-duration: 53s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+
+
+.m1{
+    
+    
+    -webkit-animation-name: ftr;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+@keyframes ftr{
+  0% { left:0; }
+  10% { left:10%; }
+  20% { left:30%; }
+  30% { left:50%; }
+  40% { left:70%; }
+  50% { left:90%; }
+  60% { left:70%; }
+  70% { left:50%; }
+  80% { left:30%; }
+  90% { left:10%; }
+  100% { left:0%; }
+}
+
+.kite{
+    
+    
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
 @keyframes shake {
   0% { transform: rotate(0deg); }
-  10% { transform:  rotate(1deg); }
-  20% { transform:  rotate(3g); }
-  30% { transform:  rotate(5deg); }
-  40% { transform:  rotate(7deg); }
-  50% { transform:  rotate(9deg); }
-  60% { transform:  rotate(7deg); }
-  70% { transform:  rotate(5deg); }
-  80% { transform:  rotate(3deg); }
-  90% { transform:  rotate(1deg); }
+  10% { transform:  rotate(5deg); }
+  20% { transform:  rotate(15g); }
+  30% { transform:  rotate(25deg); }
+  40% { transform:  rotate(25deg); }
+  50% { transform:  rotate(45deg); }
+  60% { transform:  rotate(35deg); }
+  70% { transform:  rotate(25deg); }
+  80% { transform:  rotate(15deg); }
+  90% { transform:  rotate(5deg); }
   100% { transform:  rotate(0deg); }
 }
 </style>
@@ -678,7 +711,12 @@ Created by: <a>Abhishek Sen</a><br /></div>
 
 
 <div class="vi" style="text-align: center;">
-<h3> <img src="https://1.bp.blogspot.com/-N1xBtUBT8k0/W5oIpuIBGkI/AAAAAAAAD6E/TUdbpeBlqo08O_RKoLmXiAB1FpYnRhEpQCLcBGAs/s440/vkpuja.png" class="imgresponsive" alt="Independence Day " width="80%">
+
+
+
+
+
+<h3> <img src="https://1.bp.blogspot.com/-N1xBtUBT8k0/W5oIpuIBGkI/AAAAAAAAD6E/TUdbpeBlqo08O_RKoLmXiAB1FpYnRhEpQCLcBGAs/s440/vkpuja.png" class="imgresponsive" alt=" " width="80%">
 </h3> 
 <center>
 <!--replace it-->
@@ -701,7 +739,7 @@ var audio = document.getElementById('audio');
 audio.play(); // works on desktop browsers. Silently fails in mobile Safari
 </script>
 
-
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
 <script>// Set the date we're counting down to
 var countDownDate = new Date("Jan 01, 2018 00:00:00").getTime();
 // Update the count down every 01 second
@@ -731,9 +769,9 @@ var x = setInterval(function() {
 
  
   
-<p style="font-size:32px;color:#fff;">Happy Vishwakarma Puja</p><p aling="center" style="font-size: 15px;color:#fff;"><b>
+<p style="font-size:32px;color:#fff;">Happy Vishwakarma Puja</p><p aling="center" style="font-size: 20px;color:#fff;"><b>
 
- <br><p></p></b></p> <div id="aud_img">
+ <br>In Advance<p></p></b></p> <div id="aud_img">
 
 
  
