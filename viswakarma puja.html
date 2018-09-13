@@ -1,5 +1,47 @@
 ﻿<html>
 <head>
+	<script type="text/javascript">
+
+$(document).ready(function() {
+    
+    function beeLeft() {
+        $("#b").animate({left: "-=300"}, 8500, "swing", beeRight);
+    }
+    function beeRight() {
+        $("#b").animate({left: "+=300"}, 8500, "swing", beeLeft);
+    }
+    
+    beeRight();
+});
+</script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    
+    function beeLeft() {
+        $("#b2").animate({left: "-=300"}, 12500, "swing", beeRight);
+    }
+    function beeRight() {
+        $("#b2").animate({left: "+=300"}, 12500, "swing", beeLeft);
+    }
+    
+    beeRight();
+});
+</script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    
+    function beeLeft() {
+        $(".m1").animate({left: "-=300"}, 12500, "swing", beeRight);
+    }
+    function beeRight() {
+        $(".m1").animate({left: "+=300"}, 12500, "swing", beeLeft);
+    }
+    
+    beeRight();
+});
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <style>
 #aud_img{position:relative;left:0px;}#playAudio{position:absolute;top:120px;left:120px;width:90px;overflow-x:hidden;
@@ -372,15 +414,12 @@ input[type=name], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-.footerbtn {
- 
-            display: block;
-            line-height: 15px;
-            position: fixed;
-            left:0px;
-            bottom:0px;
-            height:40px;
-            
+.footerbtn {display: block;
+line-height: 15px;
+position: fixed;
+left:0px;
+bottom:0px;
+height:40px;            
 border-radius: 15px;
   box-sizing: border-box;
   padding: 5px;
@@ -544,8 +583,6 @@ h3 {
 <div style="position:fixed;right:5px;top:5px;color:#fff;font-size:12px;">
 Created by: <a>Abhishek Sen</a><br /></div>
 <div id="b2" style="position:absolute;top:75px;"><img border="0" src="https://4.bp.blogspot.com/-gCPLihRTW0w/W5oPwUJysrI/AAAAAAAAD6Y/7kR_flNHOiA6zOAab2nUB6AjC8ReZjyTgCLcBGAs/s55/cloud-1.png"/></div>
-
-
 <div id="b" style="position:absolute;top:150px;"><img border="0" src="https://4.bp.blogspot.com/-gCPLihRTW0w/W5oPwUJysrI/AAAAAAAAD6Y/7kR_flNHOiA6zOAab2nUB6AjC8ReZjyTgCLcBGAs/s120/cloud-1.png"/></div>
 <marquee class="m1" behavior="scroll" direction="up" scrolldelay="5">  <br>
 <img class="kite" src="https://3.bp.blogspot.com/-hmHzf4ZWW2M/W5oWVZvA2jI/AAAAAAAAD6k/H09WG9UyGvo3ba3udz1b-PlPNP3OW5EGwCLcBGAs/s100/kite.png">
@@ -564,54 +601,11 @@ Created by: <a>Abhishek Sen</a><br /></div>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<script type="text/javascript">
 
-$(document).ready(function() {
-    
-    function beeLeft() {
-        $("#b").animate({left: "-=300"}, 8500, "swing", beeRight);
-    }
-    function beeRight() {
-        $("#b").animate({left: "+=300"}, 8500, "swing", beeLeft);
-    }
-    
-    beeRight();
-});
-</script>
-<script type="text/javascript">
-
-$(document).ready(function() {
-    
-    function beeLeft() {
-        $("#b2").animate({left: "-=300"}, 12500, "swing", beeRight);
-    }
-    function beeRight() {
-        $("#b2").animate({left: "+=300"}, 12500, "swing", beeLeft);
-    }
-    
-    beeRight();
-});
-</script>
-<script type="text/javascript">
-
-$(document).ready(function() {
-    
-    function beeLeft() {
-        $(".m1").animate({left: "-=300"}, 12500, "swing", beeRight);
-    }
-    function beeRight() {
-        $(".m1").animate({left: "+=300"}, 12500, "swing", beeLeft);
-    }
-    
-    beeRight();
-});
-</script>
 
 <style>
 
-.kite{
-    
-    
+.kite{     
     -webkit-animation-name: shake;
     -webkit-animation-duration: 5s;
     -webkit-animation-iteration-count: infinite;
@@ -685,11 +679,6 @@ $(document).ready(function() {
 
 
 <div class="vi" style="text-align: center;">
-
-
-
-
-
 <h3> <img src="https://1.bp.blogspot.com/-N1xBtUBT8k0/W5oIpuIBGkI/AAAAAAAAD6E/TUdbpeBlqo08O_RKoLmXiAB1FpYnRhEpQCLcBGAs/s440/vkpuja.png" class="imgresponsive" alt="Independence Day " width="80%">
 </h3> 
 <center>
