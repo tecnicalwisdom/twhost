@@ -27,10 +27,6 @@ textarea{border:0;font:14px Georgia,Serif;overflow:hidden;resize:none; backgroun
 </head>
 <body>
   
-<input type="text" id="word">
-<input type="button" id="submit" value="Randomize">
-
-<div id="mydiv"></div>
  <div id="canvasWrapper" class="outer">
     <p onclick="show('download')"><button  id="rerender">CREATE</button> Image of this Result </p>
   <p style="display:none;" id="download"><a  id="downloadLink" download="Charecter details.png">Download</a></p>
@@ -57,45 +53,7 @@ textarea{border:0;font:14px Georgia,Serif;overflow:hidden;resize:none; backgroun
   </tr>
 </tbody>
 </table></center></div>
-<script type="text/javascript">
-  // Get a reference to the DOM element, not a property of the element
-// that way you can access another property later without having
-// to re-scan the DOM for the element again
-var txtWord = document.getElementById("word");
-var btn = document.getElementById("submit");
 
-// Set up your events using DOM standards and not inline HTML event attributes
-btn.addEventListener("click", random);
-
-// By convention, use camelCase for naming
-function random() {
-
-  // Separate all the letters into an array
-  var letterArray = txtWord.value.split("");
-  
-  // create an new array from scrambled letters in the original array
-  var scrambledArray = [];
-  
-  var len = letterArray.length;
-  for (var start = 0; start < len; start++) {
-    // Get a random number between 0 and the highest array index and put it in the new array
-    var num = Math.floor(Math.random() * letterArray.length)
-    scrambledArray.push(letterArray[num]);
-    
-    // Remove letter from original array
-    letterArray.splice(num,1);
-  }
-  console.log(scrambledArray.join(""));
-}
-
-window.console = {
-  log: function(str){
-    var node = document.createElement("div");
-    node.appendChild(document.createTextNode(str));
-    document.getElementById("editable").appendChild(node);
-  }
-}
-  </script>
     <script type="text/javascript">//<![CDATA[
 
 
