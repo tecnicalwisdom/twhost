@@ -7,40 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-
-
-1.8.3.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.8.3.js"></script>
   
-      <script type="text/javascript" 
-
-src="https://rawgit.com/tecnicalwisdom/twhost/master/invo.js"></script>
-      <script type="text/javascript" 
-
-src="https://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2can
-
-vas.js"></script>
+      <script type="text/javascript" src="https://rawgit.com/tecnicalwisdom/twhost/master/invo.js"></script>
+      <script type="text/javascript" src="https://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2canvas.js"></script>
 
   <style id="compiled-css" type="text/css">
-     .card{width:400px;height:630px;background-color:#2CA3F1;border:6px 
-
-solid #000;background-image: url(https://1.bp.blogspot.com/-
-
-tsLB4FItedo/X1TY4Y7TQCI/AAAAAAAAGwk/ZI8RpLHxMxsLg1VgIQBChFYCo
-
-h42qUPfgCLcBGAsYHQ/s1600/puzz3.png);}
-.tg{position:relative;top:75px;text-align:center;font-size:50px;color:#fff;font-
-
-family:Source Sans Pro Black;}
+     .card{width:400px;height:630px;background-color:#2CA3F1;border:6px solid #000;background-image: url(https://1.bp.blogspot.com/-tsLB4FItedo/X1TY4Y7TQCI/AAAAAAAAGwk/ZI8RpLHxMxsLg1VgIQBChFYCoh42qUPfgCLcBGAsYHQ/s1600/puzz3.png);}
+.tg{position:relative;top:75px;text-align:center;font-size:50px;color:#fff;font-family:Source Sans Pro Black;}
 .tg-0lax{padding-bottom:45px;}
 
-#editable,#editable1,#editable2,#editable3 {letter-spacing: 3px;text-transform: 
-
-uppercase;
+#editable,#editable1,#editable2,#editable3 {letter-spacing: 3px;text-transform: uppercase;
     
 }
-textarea{border:0;font:14px Georgia,Serif;overflow:hidden;resize:none; 
-
-background:none;position:absolute;}
+textarea{border:0;font:14px Georgia,Serif;overflow:hidden;resize:none; background:none;position:absolute;}
     /* EOS */
   </style>
 
@@ -52,17 +32,11 @@ background:none;position:absolute;}
 
 <div id="mydiv"></div>
  <div id="canvasWrapper" class="outer">
-    <p onclick="show('download')"><button  id="rerender">CREATE</button> 
-
-Image of this Result </p>
-  <p style="display:none;" id="download"><a  id="downloadLink" 
-
-download="Charecter details.png">Download</a></p>
+    <p onclick="show('download')"><button  id="rerender">CREATE</button> Image of this Result </p>
+  <p style="display:none;" id="download"><a  id="downloadLink" download="Charecter details.png">Download</a></p>
   </div>
   
-<div id="image" class="card"><textarea id="date">December 15, 
-
-2009</textarea><center><table class="tg">
+<div id="image" class="card"><textarea id="date">December 15, 2009</textarea><center><table class="tg">
 <thead>
   <tr>
     <th class="tg-0lax"></th>
@@ -90,9 +64,7 @@ download="Charecter details.png">Download</a></p>
 var txtWord = document.getElementById("word");
 var btn = document.getElementById("submit");
 
-// Set up your events using DOM standards and not inline HTML event 
-
-attributes
+// Set up your events using DOM standards and not inline HTML event attributes
 btn.addEventListener("click", random);
 
 // By convention, use camelCase for naming
@@ -106,9 +78,7 @@ function random() {
   
   var len = letterArray.length;
   for (var start = 0; start < len; start++) {
-    // Get a random number between 0 and the highest array index and 
-
-put it in the new array
+    // Get a random number between 0 and the highest array index and put it in the new array
     var num = Math.floor(Math.random() * letterArray.length)
     scrambledArray.push(letterArray[num]);
     
