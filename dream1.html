@@ -13,15 +13,17 @@
       <script type="text/javascript" src="https://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2canvas.js"></script>
 
   <style id="compiled-css" type="text/css">
-     .card{width:400px;height:630px;background-color:#2CA3F1;border:6px solid #000;background-image: url(https://1.bp.blogspot.com/-tsLB4FItedo/X1TY4Y7TQCI/AAAAAAAAGwk/ZI8RpLHxMxsLg1VgIQBChFYCoh42qUPfgCLcBGAsYHQ/s1600/puzz3.png);}
-.tg{position:relative;top:75px;text-align:center;font-size:50px;color:#fff;font-family:Source Sans Pro Black;}
-.tg-0lax{padding-bottom:45px;}
+   
+     .bckd{background-position:105px 0px;background-size:187px 79px;background-repeat:no-repeat;background-image: url(https://1.bp.blogspot.com/-HRqWNbwmb5U/X1jv_3FazlI/AAAAAAAAGw8/pw54-NJYZ70AbON5hlmTZzATUh6w7-hAgCLcBGAsYHQ/s1600/logo%2Bjumn.png);background-color:#000;height:85px;z-index:1;}.card{z-index:999;width:400px;height:630px;background-color:#1598F0;border:6px solid #000;}
+.tg{position:relative;text-align:center;font-size:50px;color:#fff;font-family:Source Sans Pro Black;}
+.tg-0lax{padding:22px;}
 
-#editable,#editable1,#editable2,#editable3,#mydiv {letter-spacing: 3px;text-transform: uppercase;
+#editable,#editable1,#editable2,#mydiv {letter-spacing: 3px;text-transform: uppercase;border-bottom: 5px solid #333;}
+    #editable3 {letter-spacing: 3px;text-transform: uppercase;}
     
-}
 textarea{border:0;font:14px Georgia,Serif;overflow:hidden;resize:none; background:none;position:absolute;}
     /* EOS */
+ 
   </style>
 
 </head>
@@ -39,7 +41,7 @@ textarea{border:0;font:14px Georgia,Serif;overflow:hidden;resize:none; backgroun
   <p style="display:none;" id="download"><a  id="downloadLink" download="Charecter details.png">Download</a></p>
   </div>
   
-<div id="image" class="card"><textarea id="date">December 15, 2009</textarea><center><table class="tg">
+<div id="image" class="card"><div class="bckd"></div><center><table class="tg">
 <thead>
   <tr>
     <th class="tg-0lax"></th>
@@ -50,13 +52,13 @@ textarea{border:0;font:14px Georgia,Serif;overflow:hidden;resize:none; backgroun
     <td id="editable" class="tg-0lax"></td>
   </tr>
   <tr>
-    <td id="editable1" style="padding-top:15px;" class="tg-0lax">text</td>
+    <td id="editable1" class="tg-0lax">text</td>
   </tr>
   <tr>
-    <td id="editable2" style="padding-top:22px;" class="tg-0lax">text</td>
+    <td id="editable2" class="tg-0lax">text</td>
   </tr>
   <tr>
-    <td id="editable3"  style="padding-top:16px;" class="tg-0lax">text</td>
+    <td id="editable3" class="tg-0lax">text</td>
   </tr>
 </tbody>
 </table></center></div>
