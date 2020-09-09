@@ -30,7 +30,10 @@ textarea{border:0;font:14px Georgia,Serif;overflow:hidden;resize:none; backgroun
 <input type="text" id="word">
 <input type="button" id="submit" value="Randomize">
 
-<div id="mydiv"></div>
+<div style="background-color:#000;"><div id="mydiv" style="text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-family: Source Sans Pro Black;"></div></div>
  <div id="canvasWrapper" class="outer">
     <p onclick="show('download')"><button  id="rerender">CREATE</button> Image of this Result </p>
   <p style="display:none;" id="download"><a  id="downloadLink" download="Charecter details.png">Download</a></p>
@@ -92,7 +95,7 @@ window.console = {
   log: function(str){
     var node = document.createElement("div");
     node.appendChild(document.createTextNode(str));
-    document.getElementById("editable").appendChild(node);
+    document.getElementById("mydiv").appendChild(node);
   }
 }
   </script>
