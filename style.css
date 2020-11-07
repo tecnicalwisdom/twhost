@@ -83,9 +83,9 @@ textarea:hover,textarea:focus,#items td.total-value textarea:hover,#items td.tot
 .due:before, #total:before {content: '₹';}
 .coscurr:before {
     content: '₹';
-    position:absolute;
-    
-    right: auto;
+    position: relative;
+    right: -20px;
+    bottom: 34px;
     z-index: 999;
 }
 
