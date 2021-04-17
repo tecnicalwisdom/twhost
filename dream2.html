@@ -1,0 +1,159 @@
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>jQM - GMap demo</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.8.3.js"></script>
+  
+      <script type="text/javascript" src="https://rawgit.com/tecnicalwisdom/twhost/master/invo.js"></script>
+      <script type="text/javascript" src="https://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2canvas.js"></script>
+
+  <style id="compiled-css" type="text/css">
+   .vv > * {
+    /* color: red; */
+    margin: 50px 8px 50px 8px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #333;
+    border-radius: 4px;}
+     .bckd{background-position:105px 0px;background-size:187px 79px;background-repeat:no-repeat;background-image: url(https://1.bp.blogspot.com/-HRqWNbwmb5U/X1jv_3FazlI/AAAAAAAAGw8/pw54-NJYZ70AbON5hlmTZzATUh6w7-hAgCLcBGAsYHQ/s1600/logo%2Bjumn.png);background-color:#000;height:85px;z-index:1;}.card{overflow-y: hidden;z-index:999;width:400px;height:630px;background-color:#1598F0;border:6px solid #000;}
+.tg{position:relative;text-align:center;font-size:50px;color:#fff;font-family:Source Sans Pro Black;}
+.tg-0lax{padding:22px;}
+
+#editable,#editable1,#editable2 {letter-spacing: 3px;text-transform: uppercase;border-bottom: 5px solid #333;border-radius: 4px;}
+    #editable3 {letter-spacing: 3px;text-transform: uppercase;}
+    
+textarea{border:0;font:14px Georgia,Serif;overflow:hidden;resize:none; background:none;position:absolute;}
+    /* EOS */
+ 
+  </style>
+
+</head>
+<body>
+  
+<input type="text" id="word">
+<input type="button" id="submit" value="Randomize">
+
+<div id="image" class="card" style="background-color:#1598F0;"><div class="bckd"></div><div id="mydiv" style="text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-family: Source Sans Pro Black;" class="vv"></div></div>
+ <div id="canvasWrapper" class="outer">
+    <p onclick="show('download')"><button  id="rerender">CREATE</button> Image of this Result </p>
+  <p style="display:none;" id="download"><a  id="downloadLink" download="Charecter details.png">Download</a></p>
+  </div>
+  
+<div class="card"><div class="bckd"></div><center><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td id="editable" class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td id="editable1" class="tg-0lax">text</td>
+  </tr>
+  <tr>
+    <td id="editable2" class="tg-0lax">text</td>
+  </tr>
+  <tr>
+    <td id="editable3" class="tg-0lax">text</td>
+  </tr>
+</tbody>
+</table></center></div>
+<script type="text/javascript">
+  // Get a reference to the DOM element, not a property of the element
+// that way you can access another property later without having
+// to re-scan the DOM for the element again
+var txtWord = document.getElementById("word");
+var btn = document.getElementById("submit");
+
+// Set up your events using DOM standards and not inline HTML event attributes
+btn.addEventListener("click", random);
+
+// By convention, use camelCase for naming
+function random() {
+
+  // Separate all the letters into an array
+  var letterArray = txtWord.value.split("");
+  
+  // create an new array from scrambled letters in the original array
+  var scrambledArray = [];
+  
+  var len = letterArray.length;
+  for (var start = 0; start < len; start++) {
+    // Get a random number between 0 and the highest array index and put it in the new array
+    var num = Math.floor(Math.random() * letterArray.length)
+    scrambledArray.push(letterArray[num]);
+    
+    // Remove letter from original array
+    letterArray.splice(num,1);
+  }
+  console.log(scrambledArray.join(""));
+}
+
+window.console = {
+  log: function(str){
+    var node = document.createElement("div");
+    node.appendChild(document.createTextNode(str));
+    document.getElementById("mydiv").appendChild(node);
+  }
+}
+  </script>
+    <script type="text/javascript">//<![CDATA[
+$('div').each(function(){
+    this.contentEditable = true;
+});
+
+$('#editable').each(function(){
+    this.contentEditable = true;
+});
+$('#editable1').each(function(){
+    this.contentEditable = true;
+});
+$('#editable2').each(function(){
+    this.contentEditable = true;
+});
+$('#editable3').each(function(){
+    this.contentEditable = true;
+});
+
+
+function show(target) {
+    document.getElementById(target).style.display = 'block';
+}
+function reRender() {
+    html2canvas(document.getElementById("image"), {
+      onrendered: function(canvas) {
+        canvas.id = "html2canvas";
+        var oldcanvas = document.getElementById("html2canvas");
+        if(oldcanvas) oldcanvas.parentNode.removeChild(oldcanvas);
+        document.getElementById("canvasWrapper").appendChild(canvas);
+        var image = canvas.toDataURL("image/png");
+        document.getElementById("downloadLink").href = image;
+      },
+      useCORS: true
+    });
+}
+
+document.getElementById("rerender").onclick = reRender;
+
+
+  //]]>
+
+
+
+</script>
+
+ 
+
+
+
+</body></html>
