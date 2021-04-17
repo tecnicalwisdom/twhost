@@ -105,14 +105,17 @@ function random() {
 
 window.console = {
   log: function(str){
-    var node = document.createElement("div");
+    var node = document.createElement("p");
     node.appendChild(document.createTextNode(str));
     document.getElementById("mydiv").appendChild(node);
   }
 }
   </script>
     <script type="text/javascript">//<![CDATA[
-
+$('p').each(function(){
+    this.contentEditable = true;
+});
+      
 $('#editable').each(function(){
     this.contentEditable = true;
 });
