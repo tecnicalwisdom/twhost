@@ -24,7 +24,7 @@
     text-transform: uppercase;
     border-bottom: 50px solid #333;
     border-radius: 40px;}
-     .bckd{background-position:1050px 00px;background-size:1870px 790px;background-repeat:no-repeat;background-image: url(https://1.bp.blogspot.com/-HRqWNbwmb5U/X1jv_3FazlI/AAAAAAAAGw8/pw54-NJYZ70AbON5hlmTZzATUh6w7-hAgCLcBGAsYHQ/s1600/logo%2Bjumn.png);background-color:#000;height:850px;z-index:1;}.card{zoom: 0.1;overflow-y: hidden;z-index:999;width:4000px;height:6300px;background-color:#1598F0;border:60px solid #000;}
+     .bckd{background-position:1050px 00px;background-size:1870px 790px;background-repeat:no-repeat;background-image: url(https://1.bp.blogspot.com/-HRqWNbwmb5U/X1jv_3FazlI/AAAAAAAAGw8/pw54-NJYZ70AbON5hlmTZzATUh6w7-hAgCLcBGAsYHQ/s1600/logo%2Bjumn.png);background-color:#000;height:850px;z-index:1;}.cardbig{zoom:1;}.card{zoom:0.1;}.card, .cardbig{overflow-y: hidden;z-index:999;width:4000px;height:6300px;background-color:#1598F0;border:60px solid #000;}
 .tg{position:relative;text-align:center;font-size:500px;color:#fff;font-family:Source Sans Pro Black;}
 .tg-0lax{padding:220px;}
 
@@ -113,7 +113,11 @@ window.console = {
 }
   
   
- 
+ $(function(){
+    $('.card').on('click', function(){
+        $(this).toggleClass('cardbig')
+    });
+});
   </script>
     <script type="text/javascript">//<![CDATA[
 $('#mydiv').each(function(){
