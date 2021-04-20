@@ -41,7 +41,10 @@ textarea{border:0;font:140px Georgia,Serif;overflow:hidden;resize:none; backgrou
   
 <input type="text" id="word">
 <input type="button" id="submit" value="Randomize">
+<div class="package">
 
+</div>
+  
 <div id="image" class="card" style="background-color:#1598F0;"><div class="bckd"></div><div id="mydiv" style="text-align: center;
     font-size: 500px;
     color: #fff;
@@ -51,7 +54,7 @@ textarea{border:0;font:140px Georgia,Serif;overflow:hidden;resize:none; backgrou
   <p style="display:none;" id="download"><a  id="downloadLink" download="Charecter details.png">Download</a></p>
   </div>
   
-<div class="card"><div class="bckd"></div><center><table class="tg">
+<div class="card" style="display:none;"><div class="bckd"></div><center><table class="tg">
 <thead>
   <tr>
     <th class="tg-0lax"></th>
@@ -110,6 +113,13 @@ window.console = {
     document.getElementById("mydiv").appendChild(node);
   }
 }
+  
+  
+  $(function(){
+  var $button = $('.image').clone();
+  $('.package').html($button);
+});
+  
   </script>
     <script type="text/javascript">//<![CDATA[
 $('#mydiv').each(function(){
