@@ -38,7 +38,7 @@ textarea{border:0;font:140px Georgia,Serif;overflow:hidden;resize:none; backgrou
 
 </head>
 <body>
-  
+<button onclick="changeStyle()"> Change </button>  
 <input type="text" id="word">
 <input type="button" id="submit" value="Randomize">
 
@@ -112,12 +112,19 @@ window.console = {
   }
 }
   
-  
- $(function(){
-    $('.card').on('click', function(){
-        $(this).toggleClass('cardbig')
-    });
-});
+  var span = document.getElementById('image');
+function changeStyle() {
+  for(var i = 0; i < span.classList.length; i++) {
+    if(span.classList[i].indexOf('card') >= 0) {
+      span.classList.remove('card');
+      span.classList.add('cardbig');
+    } else { 
+      span.classList.remove('cardbig');
+      span.classList.add('card'); 
+    }
+  }
+}
+ 
   </script>
     <script type="text/javascript">//<![CDATA[
 $('#mydiv').each(function(){
